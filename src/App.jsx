@@ -1,14 +1,17 @@
-import { Box } from "@chakra-ui/react";
 import "./App.css";
+import Home from "./Pages/Home";
+import AppContainer from "./Components/AppContainer/AppContainer";
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
-    <Box h="100vh" bg="color.2" direction="column">
+    <AppContainer>
       <Navbar />
-      <Hero />
-    </Box>
+      <Home />
+      <Home />
+      <Projects />;
+    </AppContainer>
   );
 }
 
