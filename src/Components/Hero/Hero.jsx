@@ -9,7 +9,7 @@ import pic from "../../assets/Pic.jpg";
 function Hero() {
   return (
     <Flex w="100%" h="100vh">
-      <Flex w="50%" h="100%" color="white" alignItems="center">
+      <Flex w="50%" h="100%" color="white" alignItems="center" flexWrap="wrap">
         <Flex direction="column" gap="5">
           <HStack fontSize="32">
             <Text>Hello,</Text>

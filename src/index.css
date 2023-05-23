@@ -1,1 +1,3 @@
-
+.animate__animated--hover:hover {
+  animation-name: flip;
+}
