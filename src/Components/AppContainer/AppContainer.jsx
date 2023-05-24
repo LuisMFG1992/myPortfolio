@@ -1,8 +1,8 @@
 import { Box } from "@chakra-ui/react";
 
-const AppContainer = ({ children }) => {
+const AppContainer = ({ children, bg = "color.1" }) => {
   return (
-    <Box minHeight="100vh" bg="color.2" direction="column" px="16">
+    <Box minHeight="100vh" bg={bg} direction="column">
       {children}
     </Box>
   );
