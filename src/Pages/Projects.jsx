@@ -5,7 +5,7 @@ import AppContainer from "../Components/AppContainer/AppContainer";
 const Projects = () => {
   return (
     <AppContainer bg="color.2">
-      <VStack justifyContent="center" px="16" pt="24">
+      <VStack justifyContent="center" px="16" py="24">
         <Heading color="color.1" textAlign="center" mb="8">
           Projects
         </Heading>
@@ -15,7 +15,7 @@ const Projects = () => {
         </Text>
         <SimpleGrid
           spacing={10}
-          minChildWidth="300px"
+          minChildWidth={{ base: "200px", lg: "250px" }}
           pt="8"
           w="100%"
           justifyItems="center"

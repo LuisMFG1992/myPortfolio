@@ -8,14 +8,14 @@ const About = () => {
         <Flex
           w="50%"
           h="100%"
-          // bg="blue.100"
           justifyContent="center"
           alignItems="center"
+          display={{ base: "none", md: "flex" }}
         >
           <Box direction="column" gap="5" boxSize="400px"></Box>
         </Flex>
         <Flex
-          w="50%"
+          w={{ base: "100%", md: "50%" }}
           h="100%"
           color="white"
           alignItems="center"
@@ -23,9 +23,6 @@ const About = () => {
           pl="8"
         >
           <Flex direction="column">
-            <Text color="gray.400" fontSize="16">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio et
-            </Text>
             <Text color="color.1" fontWeight="bold" fontSize="48" pb="8">
               About me
             </Text>

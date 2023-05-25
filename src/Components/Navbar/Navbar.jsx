@@ -27,6 +27,7 @@ const Navbar = () => {
         <Spacer />
         <HStack color="white" spacing="8">
           <Link color="color.1">Home</Link>
+          <Link>About me</Link>
           <Link>Techologies</Link>
           <Link>Projects</Link>
           <Link>Contact</Link>

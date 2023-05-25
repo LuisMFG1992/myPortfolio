@@ -19,8 +19,11 @@ function Hero() {
             Luis Flores
           </Text>
           <Text fontSize="32">Front-end Developer</Text>
-          <Text color="gray.400" fontSize="24">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio et
+          <Text color="gray.400" fontSize="20">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            esse laborum vitae ut ipsa, eius dicta! Quas ipsam doloribus
+            adipisci perspiciatis sequi expedita molestias, dolorem mollitia
+            cupiditate iusto animi hic!
           </Text>
           <Button mt="8" colorScheme="green" w="25%">
             {"Let's talk"}
