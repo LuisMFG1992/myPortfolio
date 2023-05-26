@@ -8,6 +8,7 @@ import {
   Flex,
   SimpleGrid,
   Heading,
+  Button,
 } from "@chakra-ui/react";
 
 const Contact = () => {
@@ -23,7 +24,7 @@ const Contact = () => {
           Contact me
         </Heading>
         <FormControl w="50%" color="white">
-          <Box pb="8">
+          <Box pb="4">
             <FormLabel>Name</FormLabel>
             <Input type="text" />
           </Box>
@@ -33,8 +34,8 @@ const Contact = () => {
             minChildWidth="150px"
             justifyContent="center"
             alignItems="center"
-            spacing="8"
-            pb="8"
+            spacing="4"
+            pb="4"
           >
             <Box>
               <FormLabel>Phone</FormLabel>
@@ -46,10 +47,13 @@ const Contact = () => {
             </Box>
           </SimpleGrid>
 
-          <Box>
+          <Box pb="8">
             <FormLabel>Your message</FormLabel>
             <Input type="text" minH="150px" />
           </Box>
+          <Button w="100%" colorScheme="green">
+            Send
+          </Button>
         </FormControl>
       </Flex>
     </AppContainer>
