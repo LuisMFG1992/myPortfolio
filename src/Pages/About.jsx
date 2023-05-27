@@ -1,26 +1,27 @@
-import { Box, Button, Flex, HStack, Text } from "@chakra-ui/react";
+import { Button, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+
 import AppContainer from "../Components/AppContainer/AppContainer";
+import AboutMe from "../assets/AboutMe.jpg";
 
 const About = () => {
   return (
     <AppContainer bg="color.3">
-      <Flex w="100%" h="100vh" px="16">
+      <Flex w="100%" minH="100vh" px="16" gap="4">
         <Flex
           w="50%"
-          h="100%"
           justifyContent="center"
           alignItems="center"
           display={{ base: "none", md: "flex" }}
         >
-          <Box direction="column" gap="5" boxSize="400px"></Box>
+          <Image objectFit="contain" src={AboutMe} maxW="450px" />
         </Flex>
         <Flex
           w={{ base: "100%", md: "50%" }}
-          h="100%"
           color="white"
           alignItems="center"
-          flexWrap="wrap"
-          pl="8"
+          justifyContent="center"
+          px="8"
+          my="8"
         >
           <Flex direction="column">
             <Text color="color.1" fontWeight="bold" fontSize="48" pb="8">
@@ -44,14 +45,18 @@ const About = () => {
               enim blanditiis quas? Voluptatum dignissimos molestiae ipsam ipsum
               incidunt est a exercitationem!
             </Text>
-            <HStack>
-              <Button colorScheme="green" w="25%">
-                View works
-              </Button>
-              <Button colorScheme="green" variant="outline" w="25%">
-                Download CV
-              </Button>
-            </HStack>
+            <Grid templateColumns="repeat(2, 1fr)" gap="8" textAlign="center">
+              <GridItem colSpan={{ base: 2, sm: 1 }}>
+                <Button colorScheme="green" minW="150px">
+                  View works
+                </Button>
+              </GridItem>
+              <GridItem colSpan={{ base: 2, sm: 1 }}>
+                <Button colorScheme="green" variant="outline" minW="150px">
+                  Download CV
+                </Button>
+              </GridItem>
+            </Grid>
           </Flex>
         </Flex>
       </Flex>

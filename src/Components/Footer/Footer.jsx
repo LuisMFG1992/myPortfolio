@@ -1,12 +1,4 @@
-import {
-  Box,
-  Grid,
-  GridItem,
-  HStack,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Grid, GridItem, HStack, Image, Text } from "@chakra-ui/react";
 import github from "../../assets/github.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";

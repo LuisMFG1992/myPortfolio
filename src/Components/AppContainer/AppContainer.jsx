@@ -10,7 +10,7 @@ const AppContainer = ({
     <Box
       minHeight="100vh"
       bg={bg}
-      direction="column"
+      // direction="column"
       justifyContent={justifyContent}
       alignItems={alignItems}
     >
