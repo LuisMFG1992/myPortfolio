@@ -8,8 +8,8 @@ import pic from "../../assets/Pic.jpg";
 
 function Hero() {
   return (
-    <Flex w="100%" h="100vh" px="16">
-      <Flex w="50%" h="100%" color="white" alignItems="center" flexWrap="wrap">
+    <Flex minH="100vh" px="16" gap="8">
+      <Flex w="50%" color="white" alignItems="center">
         <Flex direction="column" gap="5">
           <HStack fontSize="32">
             <Text>Hello,</Text>
@@ -36,14 +36,8 @@ function Hero() {
           </HStack>
         </Flex>
       </Flex>
-      <Flex
-        w="50%"
-        h="100%"
-        // bg="red"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Box direction="column" gap="5" boxSize="400px">
+      <Flex w="50%" bg="red" justifyContent="center" alignItems="center">
+        <Box direction="column" gap="5">
           <Image src={pic} rounded="full" />
         </Box>
       </Flex>

@@ -7,14 +7,12 @@ const About = () => {
   return (
     <AppContainer bg="color.3">
       <Flex w="100%" minH="100vh" px="16" gap="4">
-        <Flex
+        <Image
           w="50%"
-          justifyContent="center"
-          alignItems="center"
+          objectFit="contain"
+          src={AboutMe}
           display={{ base: "none", md: "flex" }}
-        >
-          <Image objectFit="contain" src={AboutMe} maxW="450px" />
-        </Flex>
+        />
         <Flex
           w={{ base: "100%", md: "50%" }}
           color="white"
