@@ -1,4 +1,13 @@
-import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  GridItem,
+  HStack,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 
 import github from "../../assets/github.svg";
 import instagram from "../../assets/instagram.svg";
@@ -8,8 +17,20 @@ import pic from "../../assets/Pic.jpg";
 
 function Hero() {
   return (
-    <Flex minH="100vh" px="16" gap="8">
-      <Flex w="50%" color="white" alignItems="center">
+    <Grid
+      templateColumns="repeat(2, 1fr)"
+      px="16"
+      minH="100vh"
+      justifyItems="center"
+      alignItems="center"
+      gap="8"
+    >
+      <GridItem
+        colSpan={{ base: 2, md: 1 }}
+        color="white"
+        alignItems="center"
+        textAlign={{ base: "center", md: "start" }}
+      >
         <Flex direction="column" gap="5">
           <HStack fontSize="32">
             <Text>Hello,</Text>
@@ -25,23 +46,23 @@ function Hero() {
             adipisci perspiciatis sequi expedita molestias, dolorem mollitia
             cupiditate iusto animi hic!
           </Text>
-          <Button mt="8" colorScheme="green" w="25%">
-            {"Let's talk"}
-          </Button>
-          <HStack boxSize="8" mt="16">
-            <Image src={github} cursor="pointer" />
-            <Image src={linkedin} cursor="pointer" />
-            <Image src={twitter} cursor="pointer" />
-            <Image src={instagram} cursor="pointer" />
+          <Box>
+            <Button mt="4" colorScheme="green" w="25%" minW="100px">
+              {"Let's talk"}
+            </Button>
+          </Box>
+          <HStack mt="8" justifyContent={{ base: "center", md: "start" }}>
+            <Image boxSize="8" src={github} cursor="pointer" />
+            <Image boxSize="8" src={linkedin} cursor="pointer" />
+            <Image boxSize="8" src={twitter} cursor="pointer" />
+            <Image boxSize="8" src={instagram} cursor="pointer" />
           </HStack>
         </Flex>
-      </Flex>
-      <Flex w="50%" bg="red" justifyContent="center" alignItems="center">
-        <Box direction="column" gap="5">
-          <Image src={pic} rounded="full" />
-        </Box>
-      </Flex>
-    </Flex>
+      </GridItem>
+      <GridItem colSpan={{ base: 2, md: 1 }}>
+        <Image src={pic} rounded="3xl" />
+      </GridItem>
+    </Grid>
   );
 }
 
