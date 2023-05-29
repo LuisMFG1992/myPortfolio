@@ -14,19 +14,49 @@ const Projects = () => {
           reality.
         </Text>
         <SimpleGrid
-          spacing={10}
-          minChildWidth={{ base: "200px", lg: "250px" }}
+          spacing={15}
+          minChildWidth={{ base: "150px", md: "200px" }}
           pt="8"
           w="100%"
           justifyItems="center"
           alignItems="center"
         >
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
-          <Box w="200px" h="200px" bg="color.3" rounded="2xl"></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
+          <Box
+            w={{ base: "150px", md: "200px" }}
+            h={{ base: "150px", md: "200px" }}
+            bg="color.3"
+            rounded="2xl"
+          ></Box>
         </SimpleGrid>
       </VStack>
     </AppContainer>
