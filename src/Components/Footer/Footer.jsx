@@ -16,6 +16,7 @@ const Footer = () => {
       w="100%"
       minH="20"
       gap="4"
+      py="4"
     >
       <GridItem colSpan={{ base: 3, md: 1 }}>
         <HStack fontSize="24" fontWeight="bold">

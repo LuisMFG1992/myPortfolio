@@ -6,8 +6,6 @@ import {
   GridItem,
   HStack,
   Image,
-  Wrap,
-  WrapItem,
   Text,
 } from "@chakra-ui/react";
 
