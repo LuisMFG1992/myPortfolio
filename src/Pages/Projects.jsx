@@ -9,7 +9,7 @@ const Projects = () => {
         <Heading color="color.1" textAlign="center" mb="8">
           Projects
         </Heading>
-        <Text color="white">
+        <Text color="white" textAlign="center">
           The power to create is in your hands. Code that transforms ideas into
           reality.
         </Text>

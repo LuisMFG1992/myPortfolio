@@ -3,7 +3,7 @@ import { Box, Flex, HStack, Link, Spacer, Text } from "@chakra-ui/react";
 const Navbar = () => {
   return (
     <Box
-      px="16"
+      px={{ base: "4", md: "16" }}
       pos="fixed"
       w="100%"
       zIndex="999"
