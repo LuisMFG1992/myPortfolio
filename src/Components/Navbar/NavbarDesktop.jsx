@@ -26,7 +26,9 @@ const NavbarDesktop = () => {
         </Flex>
         <Spacer />
         <HStack color="white" spacing="8">
-          <Link color="color.1">Home</Link>
+          <Link color="color.1" fontWeight="bold">
+            Home
+          </Link>
           <Link>About me</Link>
           <Link>Techologies</Link>
           <Link>Projects</Link>

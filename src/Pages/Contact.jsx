@@ -15,6 +15,7 @@ const Contact = () => {
   return (
     <AppContainer bg="color.3" justifyContent="center" alignItems="center">
       <Flex
+        id="#1"
         justifyContent="center"
         alignItems="center"
         h="100vh"

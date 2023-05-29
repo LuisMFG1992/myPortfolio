@@ -40,7 +40,9 @@ const BurgerMenuButton = () => {
           </DrawerCloseButton>
           <DrawerBody bg="color.3" color="white" pt="16">
             <VStack h="100%" justifyContent="space-evenly">
-              <Link fontSize="30">{menuLinks.home}</Link>
+              <Link fontSize="30" color="color.1">
+                {menuLinks.home}
+              </Link>
               <Link fontSize="30">{menuLinks.aboutMe}</Link>
               <Link fontSize="30">{menuLinks.techologies}</Link>
               <Link fontSize="30">{menuLinks.projects}</Link>
