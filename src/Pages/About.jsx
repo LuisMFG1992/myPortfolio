@@ -6,15 +6,20 @@ import AboutMe from "../assets/AboutMe.jpg";
 const About = () => {
   return (
     <AppContainer bg="color.3">
-      <Flex w="100%" minH="100vh" px="16" gap="4">
-        <Flex
+      <Flex
+        minH="100vh"
+        px={{ base: "4", md: "16" }}
+        gap="4"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Image
           w="50%"
-          justifyContent="center"
-          alignItems="center"
+          maxW="500px"
+          objectFit="contain"
+          src={AboutMe}
           display={{ base: "none", md: "flex" }}
-        >
-          <Image objectFit="contain" src={AboutMe} maxW="450px" />
-        </Flex>
+        />
         <Flex
           w={{ base: "100%", md: "50%" }}
           color="white"
@@ -22,6 +27,7 @@ const About = () => {
           justifyContent="center"
           px="8"
           my="8"
+          textAlign={{ base: "center", md: "start" }}
         >
           <Flex direction="column">
             <Text color="color.1" fontWeight="bold" fontSize="48" pb="8">
