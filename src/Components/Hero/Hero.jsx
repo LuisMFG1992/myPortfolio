@@ -73,6 +73,7 @@ function Hero() {
             rounded="3xl"
             p="8"
             maxWidth={{ base: "", md: "450px", xl: "700px" }}
+            objectFit="contain"
           />
         </GridItem>
       </Grid>

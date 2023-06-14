@@ -5,7 +5,7 @@ import AboutMe from "../assets/AboutMe.jpg";
 
 const About = () => {
   return (
-    <AppContainer bg="color.3">
+    <AppContainer bg="color.3" id="AboutMe">
       <Flex
         minH="100vh"
         px={{ base: "4", md: "16" }}

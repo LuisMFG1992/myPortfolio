@@ -1,4 +1,7 @@
-import { Box, Flex, HStack, Link, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Spacer, Text } from "@chakra-ui/react";
+import { menuLinks } from "./menuLinks";
+
+import { Link } from "react-router-dom";
 
 const NavbarDesktop = () => {
   return (
@@ -26,13 +29,28 @@ const NavbarDesktop = () => {
         </Flex>
         <Spacer />
         <HStack color="white" spacing="8">
-          <Link color="color.1" fontWeight="bold">
-            Home
+          {/* <Link color="color.1" fontWeight="bold">
+            {menuLinks.home}
+          </Link> */}
+          {/* <Link>{menuLinks.aboutMe}</Link>
+          <Link>{menuLinks.techologies}</Link>
+          <Link>{menuLinks.projects}</Link>
+          <Link>{menuLinks.contact}</Link> */}
+
+          <Link to={"/"}>
+            <Text color="color.1" fontWeight="bold">
+              {menuLinks.home}
+            </Text>
           </Link>
-          <Link>About me</Link>
-          <Link>Techologies</Link>
-          <Link>Projects</Link>
-          <Link>Contact</Link>
+          <Link to={"/about"}>
+            <Text fontWeight="bold">{menuLinks.aboutMe}</Text>
+          </Link>
+          <Link to={"/projects"}>
+            <Text fontWeight="bold">{menuLinks.projects}</Text>
+          </Link>
+          <Link to={"/contact"}>
+            <Text fontWeight="bold">{menuLinks.contact}</Text>
+          </Link>
         </HStack>
       </Flex>
     </Box>

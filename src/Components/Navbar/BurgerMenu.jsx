@@ -9,7 +9,7 @@ import {
   DrawerContent,
   DrawerOverlay,
   Icon,
-  Link,
+  Text,
   VStack,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -17,6 +17,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import { menuLinks } from "./menuLinks";
+import { Link } from "react-router-dom";
 
 const BurgerMenuButton = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -39,14 +40,22 @@ const BurgerMenuButton = () => {
             <Icon as={AiFillCloseCircle} color="color.1" boxSize={6} />
           </DrawerCloseButton>
           <DrawerBody bg="color.3" color="white" pt="16">
-            <VStack h="100%" justifyContent="space-evenly">
-              <Link fontSize="30" color="color.1">
-                {menuLinks.home}
+            <VStack h="100%" justifyContent="space-evenly" fontSize="30">
+              <Link to={"/"}>
+                <Text color="color.1" fontWeight="bold">
+                  {menuLinks.home}
+                </Text>
               </Link>
-              <Link fontSize="30">{menuLinks.aboutMe}</Link>
-              <Link fontSize="30">{menuLinks.techologies}</Link>
-              <Link fontSize="30">{menuLinks.projects}</Link>
-              <Link fontSize="30">{menuLinks.contact}</Link>
+              <Link to={"/about"}>
+                <Text fontWeight="bold">{menuLinks.aboutMe}</Text>
+              </Link>
+
+              <Link to={"/projects"}>
+                <Text fontWeight="bold">{menuLinks.projects}</Text>
+              </Link>
+              <Link to={"/contact"}>
+                <Text fontWeight="bold">{menuLinks.contact}</Text>
+              </Link>
             </VStack>
           </DrawerBody>
         </DrawerContent>
